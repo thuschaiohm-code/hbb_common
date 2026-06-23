@@ -119,9 +119,8 @@ const CHARS: &[char] = &[
 
 // SundayReach fork (Slow Sunday Tales) — self-hosted relay. See CLIENT-REBRAND-PLAN.md.
 pub const RENDEZVOUS_SERVERS: &[&str] = &["remote.slowsundaytales.com"];
-// SUNDAYREACH-TODO(phase-2): replace with our server key after `docker compose up`
-//   → ssh VM: cat server/data/id_ed25519.pub   (the build will NOT connect until this is our key)
-pub const RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
+// SundayReach self-hosted relay key (server/data/id_ed25519.pub), embedded phase-2 2026-06-23.
+pub const RS_PUB_KEY: &str = "cJOjOsdH1eLr87ILW7e+CLYkMd6UutbWqnHjOjt6izc=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
