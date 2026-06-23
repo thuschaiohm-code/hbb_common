@@ -121,6 +121,9 @@ const CHARS: &[char] = &[
 pub const RENDEZVOUS_SERVERS: &[&str] = &["remote.slowsundaytales.com"];
 // SundayReach self-hosted relay key (server/data/id_ed25519.pub), embedded phase-2 2026-06-23.
 pub const RS_PUB_KEY: &str = "cJOjOsdH1eLr87ILW7e+CLYkMd6UutbWqnHjOjt6izc=";
+// SundayReach self-hosted API server (account login + my-devices), embedded phase-4b 2026-06-23.
+// Empty string = no embedded default (fall back to upstream derivation).
+pub const API_SERVER: &str = "https://remote.slowsundaytales.com";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
